@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <center><div id="calculator">
+    <h1>SIMPLE CALCULATOR</h1>
+    <input id="calci-display" readonly>
+    <div id="firstrow">
+        <button id="one" onclick="appendToDisplay('1')">1</button>
+        <button id="two" onclick="appendToDisplay('2')">2</button>
+        <button id="three" onclick="appendToDisplay('3')">3</button>
+        <button id="addition" onclick="appendToDisplay('+')" class="operator">+</button>
+    </div>
+    <div id="secondrow">
+        <button id="four" onclick="appendToDisplay('4')">4</button>
+        <button id="five" onclick="appendToDisplay('5')">5</button>
+        <button id="six" onclick="appendToDisplay('6')">6</button>
+        <button id="subract" class="operator" onclick="appendToDisplay('-')">-</button>
+        
+    </div>
+    <div id="thirdrow">
+        <button id="seven" onclick="appendToDisplay('7')">7</button>
+        <button id="eight" onclick="appendToDisplay('8')">8</button>
+        <button id="nine" onclick="appendToDisplay('9')">9</button>
+        <button id="multiply" class="operator" onclick="appendToDisplay('x')">X</button>
+    </div>
+    <div id="fourthrow">
+        <button id="clear" onclick="cleardisplay()">C</button>
+        <button id="zero" onclick="appendToDisplay('0')">0</button>
+        <button id="decimal" onclick="appendToDisplay('.')">.</button>
+        <button id="division" class="operator" onclick="appendToDisplay('/')">/</button>
+    </div>
+<div id="fifthrow">
+    <button id="evaluate" onclick="calculate()">=</button>
+</div></center>
+</div>
+   
+    <script src="app.js"></script>
+</body>
+</html>
