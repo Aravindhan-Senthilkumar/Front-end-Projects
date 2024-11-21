@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    font-family: "Host Grotesk", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.titlebar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: black;
+    padding: 30px;
+}
+
+.shopname{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    padding-left: 30px;
+}
+
+.searchbar input{
+    padding:10px;
+    padding-right: 200px;
+}
+
+.menu a{
+    text-decoration: none;
+
+}
+
+.menu li{
+    list-style: none;
+}
+
+.menuitems{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.menuitems a{
+    color: white;
+}
+
+.searchbar a{
+    color: white;
+}
+
+#innercontainer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border: 1px solid black;
+    flex-direction: column;
+    width: 200px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+
+#innercontainer img{
+    width: 100%;
+    height: 30vh;
+    border-radius: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+#innercontainer img:hover{
+    transform: scale(1.2);
+    transition-duration: 0.8s;
+    border-radius: 12px;
+}
+
+#innercontainer{
+    box-shadow: 5px 10px 3px rgba(0, 0, 0, 0.2);
+}
+
+#innercontainer :hover{
+    box-shadow: 10px 20px 3px rgba(0, 0, 0, 0.8);
+}
+
+.containers{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 40px;
+    gap: 50px;
+    height: max-content;
+}
+
+#innercontainer .itemname{
+    padding-left: 7px;
+    padding-top: 20px;
+}
+
+#innercontainer .price{
+    padding-left: 7px;
+}
+
+.price{
+    color: red;
+}
+
+.itemname{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#star{
+    color: gold;
+    font-size: 13px;
+    padding-left:7px;
+    padding-bottom: 2px;
+}
+
+#footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.socialmedia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.footertitle {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    padding-top: 10px;
+}
+
+.socialmedia p{
+    font-size: smaller;
+    padding-bottom: 10px;
+}
+
+.socialmedia .logo a{
+    text-decoration: none;
+    color: white;
+}
+
+.logo i{
+    font-size: 30px;
+}
+
+.logo{
+    display: flex;
+    gap: 40px;
+}
+
+.footeritems{
+    display: flex;
+    align-items: center;
+    gap: 200px;
+    padding-top: 10px;
+}
+
+.products a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.products li{
+    list-style: none;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.copyright p{
+    padding-right: 10px;
+}
+
+.footertitlebottom{
+    font-weight: bold;
+}
+
+#sliderimage img{
+    height: 720px;
+    width: 1080px;
+}
+
+@keyframes slide{
+    0% {
+      left: 0px;
+    }
+    15% {
+      left: 0px;
+    }
+    20% {
+      left: -1080px;
+    }
+    32% {
+      left: -1080px;
+    }
+    35% {
+      left: -2160px;
+    }
+    47% {
+      left: -2160px;
+    }
+    50% {
+      left: -3240px;
+    }
+    63% {
+      left: -3240px;
+    }
+    66% {
+      left: -4320px;
+    }
+    79% {
+      left: -4320px;
+    }
+    82% {
+      left: -5400px;
+    }
+    100% {
+      left: 0px;
+    }
+  }
+
+#slide{
+    width: 1080px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+}
+#sliderimage{
+    display: flex;
+    float: left;
+    position: relative;
+    width: 1080px;
+    height: 720px;
+    animation-name: slide;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    transition-duration: 2s;
+}
